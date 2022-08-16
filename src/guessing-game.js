@@ -12,15 +12,15 @@ class GuessingGame {
     // console.log(this.minValue, this.maxValue);
     // console.log(`number of trying ${this.numberTry++}`);
     // console.log(`min is ${this.minValue} and max is ${this.maxValue}`);
-    return Math.floor((this.maxValue + this.minValue) / 2);
+    return Math.round((this.maxValue + this.minValue) / 2);
   }
 
   lower() {
-    this.maxValue = Math.floor((this.maxValue + this.minValue) / 2 + 1);
+    this.maxValue = Math.round((this.maxValue + this.minValue) / 2);
   }
 
   greater() {
-    this.minValue = Math.floor((this.maxValue + this.minValue) / 2);
+    this.minValue = Math.round((this.maxValue + this.minValue) / 2);
   }
 }
 
